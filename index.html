@@ -1,0 +1,33 @@
+<html lang="pt">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Document</title>
+  </head>
+
+  <body>
+    <div class="container">
+      <video
+        id="video1"
+        class="video"
+        src="./Assets/A História da Bíblia.mp4"
+      ></video>
+      <div
+        onmouseenter="mostrar(this)"
+        onmouseleave="esconder(this)"
+        class="controle"
+      >
+        <img class="btn" onclick="retroceder()" src="./Assets/pratras.png" />
+        <img class="btn" onclick="avancar()" src="./Assets/prafrente.png" />
+        <img class="btn" onclick="diminuir_vel()" src="./Assets/menos.png" />
+        <img class="btn" onclick="aumentar_vel()" src="./Assets/mais.png" />
+        <img class="btn" onclick="play()" src="./Assets/play.png" />
+        <img class="btn" onclick="pause()" src="./Assets/pause.png" />
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
